@@ -10,6 +10,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home.index')->with(['title' => '']);
+        return view('home.index')->with(['title' => 'Home | Dr. Chukwuemeka Aroh is a quintessential speaker, public intellectual, political scientist, social activist and politician, who has always had a passion for a better society.']);
     }
 }
