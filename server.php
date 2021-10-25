@@ -1,6 +1,14 @@
 <?php
 
 /**
+php artisan route:clear
+php artisan view:clear
+php artisan config:clear
+php artisan cache:clear
+composer dumpautoload
+*/
+
+/**
  * Laravel - A PHP Framework For Web Artisans
  *
  * @package  Laravel
