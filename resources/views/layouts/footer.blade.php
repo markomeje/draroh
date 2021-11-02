@@ -6,8 +6,6 @@
         <script src="/bootstrap/bootstrap.min.js"></script>
         {{-- index JS --}}
         <script src="/js/index.js"></script>
-        {{-- Countdown Timer JS --}}
-        <script src="/js/countdown.js"></script>
         {{-- Download JS --}}
         <script src="/js/download.js"></script>
     </body>
