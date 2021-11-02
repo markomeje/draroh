@@ -3,7 +3,6 @@
     --green: #10B981;
     --gray: #F9FAFB;
     --red: #EF0619;
-    --skyblue: #67D6F1;
 }
 
 body {
@@ -24,8 +23,47 @@ p {
     font-size: 20px !important;
 }
 
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.home-banner h1 {
+    font-size: 80px;
+}
+
+.home-banner {
+    padding: 40px 0 0;
+    background-image: url('/images/banners/lagos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.home-banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-wrapper {
+    width: 218px;
+}
+
 .bg-green {
     background-color: var(--green);
+}
+
+.book-section {
+    padding: 100px 0 80px;
 }
 
 .preloader {
@@ -35,7 +73,7 @@ p {
     width: 100%;
     height: 100%;
     z-index: 999999;
-    background-color: #000;
+    background-color: #070217;
     background-position: center center;
     background-repeat: no-repeat;
     background-image: url('/images/grid.svg');
@@ -52,38 +90,8 @@ p {
             box-shadow: none !important;
 }
 
-.bg-skyblue {
-    background-color: var(--skyblue);
-}
-
-.comming-soon {
-    background-image: url('/images/banners/nature.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.comming-soon:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 .text-darkly {
     color: var(--darkly);
-}
-
-.comming-soon h1 {
-    font-size: 80px;
 }
 
 .text-green {
@@ -116,36 +124,15 @@ a:hover, button:hover {
             transform: translate(-50%, -50%);
 }
 
-.dots-pattern {
-    background-color: transparent; 
-    opacity: 1; 
-    background-image: radial-gradient(#8B009F 1.4500000000000002px, transparent 1.4500000000000002px); 
-    background-size: 10px 10px;
-    z-index: -1;
-    top: -15px;
-}
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {
 
-.custom-switch .custom-control-input:checked~.custom-control-label::before {
-    background-color: #198754 !important; /* bootstrap bg-success  */
-    border: none !important;
-}
+    .logo-wrapper {
+        width: 194px;
+    }
 
-.custom-switch .custom-control-input:checked:focus~.custom-control-label::before {
-    -webkit-box-shadow: 0 0 0 1px transparent;
-            box-shadow: 0 0 0 1px transparent;
+    .home-banner h1 {
+        font-size: 45px;
+    }
 }
-
-.custom-switch .custom-control-input:focus~.custom-control-label::before {
-    -webkit-box-shadow: 0 0 0 1px transparent;
-            box-shadow: 0 0 0 1px transparent;
-}
-
-.custom-switch .custom-control-input:active~.custom-control-label::before {
-    background-color: transparent;
-}
-
-.custom-switch .custom-control-label::after {
-    background-color: #6c757d;
-}
-
 

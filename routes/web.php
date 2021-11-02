@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{HomeController, ErrorCotroller, DownloadsController};
+use App\Http\Controllers\{HomeController, ErrorController, DownloadsController};
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,8 @@ use App\Http\Controllers\{HomeController, ErrorCotroller, DownloadsController};
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/whatnow', [DownloadsController::class, 'whatnow']);
-Route::fallback([ErrorCotroller::class, 'error']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/soon', [HomeController::class, 'soon']);
+Route::post('/whatnow', [DownloadsController::class, 'whatnow'])->name('download.book');
+Route::get('/download/{hash}', [DownloadsController::class, 'download'])->name('download');
+Route::fallback([ErrorController::class, 'error']);

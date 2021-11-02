@@ -11,6 +11,6 @@ class ErrorController extends Controller
      */
     public function error()
     {
-        return view('layout.error')->with(['title' => '404 Page Not Found']);
+        return view('layouts.error')->with(['title' => '404 Page Not Found']);
     }
 }
