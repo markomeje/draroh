@@ -5,7 +5,7 @@
                 @csrf
                 <div class="modal-body m-0 p-0">
                     <div class="position-relative">
-                        <div class="cursor-pointer position-absolute bg-danger text-white rounded-circle px-2 py-1" data-dismiss="modal" aria-label="Close" style="top: -15px; right: -15px;">
+                        <div class="cursor-pointer position-absolute bg-danger text-white rounded-circle px-2 py-1" data-dismiss="modal" aria-label="Close" style="top: -18px; right: 18px;">
                             <i class="icofont-close"></i>
                         </div>
                     </div>
