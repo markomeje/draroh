@@ -1,14 +1,11 @@
 <div class="modal fade" id="download-book" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-sm modal-dialog-centered" style="border-radius: 15px;" role="document">
         <div class="modal-content rounded-0 border-0">
             <form method="post" action="javascript:;" class="download-book-form" data-action="{{ route('download.book') }}" autocomplete="off">
                 @csrf
                 <div class="modal-body m-0 p-0">
                     <div class="position-relative">
-                        <div class="border-bottom">
-                            <img src="/images/banners/whatnow.png" class="img-fluid w-100">
-                        </div>
-                        <div class="cursor-pointer position-absolute bg-danger text-white px-2 py-1" data-dismiss="modal" aria-label="Close" style="top: 15px; right: 15px;">
+                        <div class="cursor-pointer position-absolute bg-danger text-white rounded-circle px-2 py-1" data-dismiss="modal" aria-label="Close" style="top: -15px; right: -15px;">
                             <i class="icofont-close"></i>
                         </div>
                     </div>

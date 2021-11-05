@@ -32,6 +32,6 @@ class Download extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.downloaders')->subject('Dr. Aroh Chukwuemeka Free Book');
+        return $this->markdown('emails.downloaders')->subject('The Book - What Now? 60 Past 1960.');
     }
 }
