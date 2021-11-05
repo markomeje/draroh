@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\{Request, Response};
+use App\models\Download;
 use DB;
 
 class DownloadsController extends Controller
@@ -27,7 +28,7 @@ class DownloadsController extends Controller
         DB::beginTransaction();
         $email = $data['email'];
         $hash = \Str::random(64);
-        \App\models\Download::create([
+        Download::create([
             'email' => $email,
             'hash' => $hash,
         ]);
