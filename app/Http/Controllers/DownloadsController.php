@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\{Request, Response};
 use App\models\Download;
+use App\Mail\DownloadBook;
 use DB;
 
 class DownloadsController extends Controller
@@ -34,7 +35,7 @@ class DownloadsController extends Controller
         ]);
 
         try {
-            \Mail::to($email)->send(new \App\Mail\Download($email));
+            \Mail::to($email)->send(new DownloadBook($email));
             DB::commit();
             return response()->json([
                 'status' => 1,
@@ -52,7 +53,7 @@ class DownloadsController extends Controller
 
     public function download($hash = '')
     {
-        if (empty($hash) || empty(\App\models\Download::where(['hash' => $hash])->first())) {
+        if (empty($hash) || empty(Download::where(['hash' => $hash])->first())) {
             die(view('layouts.error'));
         }
 
