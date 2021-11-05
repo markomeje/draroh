@@ -34,7 +34,7 @@ class DownloadsController extends Controller
             'hash' => $hash,
         ]);
 
-        try {
+        // try {
             \Mail::to($email)->send(new DownloadBook($email));
             DB::commit();
             return response()->json([
@@ -42,13 +42,13 @@ class DownloadsController extends Controller
                 'info' => 'Operation Successfull',
                 'redirect' => route('download', ['hash' => $hash]),
             ]);
-        } catch (\Exception $error) {
-            DB::rollback();
-            return response()->json([
-                'status' => 0,
-                'info' => 'Network Error. Try Again.'
-            ]);
-        }
+        // } catch (\Exception $error) {
+        //     DB::rollback();
+        //     return response()->json([
+        //         'status' => 0,
+        //         'info' => 'Network Error. Try Again.'
+        //     ]);
+        // }
     }
 
     public function download($hash = '')
