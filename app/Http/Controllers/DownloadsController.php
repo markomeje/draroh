@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\{Request, Response};
-use App\models\Download;
+use App\Models\Download;
 use App\Mail\DownloadBook;
 use DB;
 
