@@ -12,10 +12,10 @@
                             <h1 class="text-darkly font-weight-bolder"><span class="font-weight-lighter">Welcome</span> To My <span class="text-green">Profile</span></h1>
                             <div class="text-muted m-0">I'm a quintessential speaker, public intellectual, political scientist, social activist and politician, who has always had a passion for a better society.</div>
                         </div>
-                        <div class="">
+                        <div class="mb-4">
                             <a href="javascript:;" data-toggle="modal" data-target="#download-book" class="btn btn-lg bg-green text-white rounded px-3">Download My Free Book
                             </a>
-                        </div>   
+                        </div>  
                     </div>
                     <div class="col-12 col-lg-5">
                         <div class="">
@@ -40,8 +40,15 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div>
+                    <div class="mb-4">
                         <img src="/images/banners/whatnow.png" class="img-fluid w-100 shadow-lg">
+                    </div>
+                    <div class="p-3 text-center bg-darkly">
+                        <video preload="metadata" muted="true" loop controls class="w-100" style="max-width: 320px; outline: none;">
+                            <source src="/videos/gni.mp4" type="video/mp4">
+                            <source src="/videos/gni.ogg" type="video/ogg">
+                            Your browser does not support the video element. Kindly update it to latest version.
+                        </video>
                     </div>
                 </div>
             </div>
@@ -60,12 +67,12 @@
                     <div class="mb-3">Contact address: House 56, Coal City Estate. Off Garden Avenue Enugu Enugu State, Nigeria</div>
                     <div class="row">
                         <div class="col-6 mb-3">
-                            <a href="tel+08177683154" class="btn btn-block btn-info">
+                            <a href="tel:08177683154" class="btn btn-block btn-info">
                                 08177683154
                             </a>
                         </div>
                         <div class="col-6 mb-3">
-                            <a href="tel+08038741923" class="btn btn-block btn-info">
+                            <a href="tel:08038741923" class="btn btn-block btn-info">
                                 08038741923
                             </a>
                         </div>
