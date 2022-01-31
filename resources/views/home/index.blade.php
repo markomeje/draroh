@@ -44,7 +44,7 @@
                         <img src="/images/banners/whatnow.png" class="img-fluid w-100 shadow-lg">
                     </div>
                     <div class="p-3 text-center bg-darkly">
-                        <video preload="metadata" muted="true" loop controls class="w-100" style="max-width: 320px; outline: none;">
+                        <video preload="metadata" autoplay loop controls class="w-100" style="max-width: 320px; outline: none;">
                             <source src="/videos/gni.mp4" type="video/mp4">
                             <source src="/videos/gni.ogg" type="video/ogg">
                             Your browser does not support the video element. Kindly update it to latest version.
