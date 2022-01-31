@@ -48,8 +48,35 @@
         </div>
     </div>
     <section class="py-5 bg-darkly">
-        <div class="container">
-            <div class="text-white m-0">&copy Copyright Dr Aroh Chukwuemeka {{ date('Y') === '2021' ? date('Y') : '2021 - '. date('Y') }}</div>
+        <div class="container text-white py-5">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <h3>Support Us</h3>
+                    <p class="text-white">To support and partner with us in our quest for a better Nigeria. Enable us produce more resources and reach more people. </p>
+                    <div>Access Bank, 0026461887 - Aroh Chukwuemeka</div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3>Contact Us</h3>
+                    <div class="mb-3">Contact address: House 56, Coal City Estate. Off Garden Avenue Enugu Enugu State, Nigeria</div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <a href="tel+08177683154" class="btn btn-block btn-info">
+                                08177683154
+                            </a>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <a href="tel+08038741923" class="btn btn-block btn-info">
+                                08038741923
+                            </a>
+                        </div>
+                    </div>
+       
+                    <p>Email: official.draroh@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container border-top">
+            <div class="text-white m-0 pt-5">&copy Copyright Dr Aroh Chukwuemeka {{ date('Y') === '2021' ? date('Y') : '2021 - '. date('Y') }}</div>
         </div>
     </section>
 @include('layouts.footer')
